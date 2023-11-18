@@ -7,7 +7,7 @@ var paulo = {
 };
 
 var rafa = {
-    name:'Rafa',
+    name:'Rafa2',
     vitories : 0,
     draws: 0,
     loss: 0,
@@ -21,19 +21,22 @@ var table = document.getElementById('playersTable');
 showTable();
 
 function showTable () {
-    table.innerHTML =  `
-    <tr>
-        <td>`+ paulo.name +`</td>
-        <td>${paulo.vitories}</td>
-        <td>${paulo.draws}</td>
-        <td>${paulo.loss}</td>
-        <td>${paulo.points}</td>
-        <td><button onClick="addVictory(paulo)">Vitória</button></td>
-        <td><button onClick="addDraw(paulo)">Empate</button></td>
-        <td><button onClick="addLoss(paulo)">Derrota</button></td>
-    </tr>
+    // for (var i = 0; i<3; i++) {
+        table.innerHTML =  `
+        <tr>
+            <td>`+ paulo.name +`</td>
+            <td>${paulo.vitories}</td>
+            <td>${paulo.draws}</td>
+            <td>${paulo.loss}</td>
+            <td>${paulo.points}</td>
+            <td><button onClick="addVictory(paulo)">Vitória</button></td>
+            <td><button onClick="addDraw(paulo)">Empate</button></td>
+            <td><button onClick="addLoss(paulo)">Derrota</button></td>
+        </tr>
+    
+    `
+    // }
 
-`
 
 
 };
